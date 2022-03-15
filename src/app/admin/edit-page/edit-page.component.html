@@ -1,0 +1,50 @@
+<div *ngIf="!dataLoading; else loading">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div
+      [ngClass]="{invalid: form.get('title')?.invalid && form.get('title')?.touched}"
+      class="form-control">
+      <label for="title">Post title:</label>
+      <input id="title" type="text"
+             formControlName="title">
+      <div
+        *ngIf="form.get('title')?.invalid && form.get('title')?.touched"
+        class="validation">
+        <small *ngIf="form.get('title')?.errors?.['required']">Please enter a title</small>
+      </div>
+    </div>
+
+    <div class="form-control">
+      <label>Post Content</label>
+      <quill-editor
+        formControlName="text"
+        [ngClass]="{invalid: form.get('text')?.invalid && form.get('text')?.touched}"
+      ></quill-editor>
+    </div>
+
+    <div
+      [ngClass]="{invalid: form.get('author')?.invalid && form.get('author')?.touched}"
+      class="form-control">
+      <label for="author">Author:</label>
+      <input id="author" type="text"
+             formControlName="author">
+      <div
+        *ngIf="form.get('author')?.invalid && form.get('author')?.touched"
+        class="validation">
+        <small *ngIf="form.get('author')?.errors?.['required']">Please enter author names</small>
+      </div>
+    </div>
+
+    <button class="btn btn-primary"
+            type="submit"
+            [disabled]="!form.valid || submitted"
+    >Update</button>
+  </form>
+
+</div>
+
+<ng-template #loading>
+  <div class="ring">Loading
+    <span></span>
+  </div>
+</ng-template>
+

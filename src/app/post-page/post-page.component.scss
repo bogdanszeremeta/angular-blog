@@ -1,0 +1,19 @@
+@import "../shared/style/loading";
+
+.post {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .info {
+    margin-bottom: 1rem;
+    strong {
+      margin-right: 0.8rem;
+    }
+  }
+
+}
