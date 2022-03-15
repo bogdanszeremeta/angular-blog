@@ -6,10 +6,10 @@ The Blog have 2 panels - admin and user.\
 User panel is responsible for displaying posts.\
 Admin panel allows to create, edit and remove posts. All of this operations interact with the Firebase Realtime Database.\
 To go to the admin panel, you need to register the path: .../admin (for example `https://angular-blog-55695.web.app/admin`) and enter admin's email and password.\
+
 In order to receive authorization data, please contact me by email: b.sheremeta@wp.pl.
 
 The [Blog](https://angular-blog-55695.web.app/) was hosted on the firebase.
-
 
 ## Quick Start
 ```git clone https://github.com/bogdanszeremeta/angular-blog.git```\
