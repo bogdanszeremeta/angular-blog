@@ -11,6 +11,12 @@ In order to receive authorization data, please contact me by email: b.sheremeta@
 
 The [Blog](https://angular-blog-55695.web.app/) was hosted on the firebase.
 
+#### Screenshots of the admin panel
+
+:white_small_square: Dashboard page ![Dashboard page](https://github.com/bogdanszeremeta/angular-blog_img/blob/main/angular-blog-admin-dashboard.JPG)\
+:white_small_square: Create page ![Create page](https://github.com/bogdanszeremeta/angular-blog_img/blob/main/angular-blog-admin-create.JPG)\
+:white_small_square: Edit page ![Edit page](https://github.com/bogdanszeremeta/angular-blog_img/blob/main/angular-blog-admin-edit.JPG)
+
 ## Quick Start
 ```git clone https://github.com/bogdanszeremeta/angular-blog.git```\
 ```cd angular-blog```\
